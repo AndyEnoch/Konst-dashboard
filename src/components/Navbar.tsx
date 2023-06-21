@@ -1,5 +1,4 @@
-import React, {Dispatch, FC, ReactNode, SetStateAction, useState} from 'react';
-import PropTypes from 'prop-types';
+import React, {Dispatch, FC, SetStateAction, useState} from 'react';
 import {AppBar, Avatar, Box, Button, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
 import FlexBetween from "./FlexBetween";
 import {ArrowDropDownOutlined, Menu as MenuIcon, SettingsOutlined} from "@mui/icons-material";
@@ -12,9 +11,7 @@ interface NavBarProps {
 const Navbar: FC<NavBarProps> = ({ isSidebarOpen, setIsSidebarOpen, }) => {
     const [anchorEl, setAnchorEl] = useState(null);
     const isOpen = Boolean(anchorEl);
-    // const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    //     setAnchorEl(event.currentTarget);
-    // }
+
     const handleClose = () => setAnchorEl(null);
 
     return (
@@ -44,7 +41,6 @@ const Navbar: FC<NavBarProps> = ({ isSidebarOpen, setIsSidebarOpen, }) => {
                     </IconButton>
                     <FlexBetween>
                         <Button
-                            // onClick={handleClick}
                             sx={{
                                 display: 'flex',
                                 justifyContent: 'space-between',
@@ -88,10 +84,6 @@ const Navbar: FC<NavBarProps> = ({ isSidebarOpen, setIsSidebarOpen, }) => {
             </Toolbar>
         </AppBar>
     );
-};
-
-Navbar.propTypes = {
-
 };
 
 export default Navbar;

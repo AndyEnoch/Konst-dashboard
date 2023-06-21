@@ -30,9 +30,9 @@ const HireBusComponent = () => {
                         <TableRow>
                             <TableCell>Bus number</TableCell>
                             <TableCell align="right">Bus type</TableCell>
-                            <TableCell align="right">Destination&nbsp;(g)</TableCell>
-                            <TableCell align="right">Fee&nbsp;(g)</TableCell>
-                            <TableCell align="right">Date&nbsp;(g)</TableCell>
+                            <TableCell align="right">Destination</TableCell>
+                            <TableCell align="right">Fee&nbsp;(GHS)</TableCell>
+                            <TableCell align="right">Date</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

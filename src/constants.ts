@@ -19,7 +19,7 @@ export const rideHistory = [
             year: '2023',
         },
         to: 'Madina',
-        from: 'Legonn',
+        from: 'Legon',
         amtPaid: 'GHS 10.00'
     },
     {

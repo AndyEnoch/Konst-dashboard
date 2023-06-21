@@ -72,8 +72,8 @@ const BusRideComponent = () => {
                     <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">Destination</InputLabel>
                         <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
+                            id="simple-select"
+                            data-testid="test-select"
                             value={destination}
                             label="Age"
                             onChange={handleDestinationChange}

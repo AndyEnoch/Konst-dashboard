@@ -1,5 +1,4 @@
-import React, {FC, ReactNode, useEffect, useState, Dispatch, SetStateAction} from 'react';
-import PropTypes from 'prop-types';
+import React, {FC, useEffect, useState, Dispatch, SetStateAction} from 'react';
 import {useLocation, useNavigate} from "react-router";
 import {
     Box,
@@ -148,10 +147,6 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarOpen, setIsSidebarOpen, drawerWidt
             )}
         </Box>
     );
-};
-
-Sidebar.propTypes = {
-
 };
 
 export default Sidebar;
